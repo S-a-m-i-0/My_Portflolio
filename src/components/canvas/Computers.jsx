@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -6,6 +6,11 @@ import CanvasLoader from "../Loader";
 
 const Computer = ({ position, rotation }) => {
   const earth = useGLTF("./planet/scene.gltf");
+
+  // Log the model data to inspect it for NaN values or missing attributes
+  useEffect(() => {
+    console.log("Loaded model data:", earth);
+  }, [earth]);
 
   return (
     <primitive
@@ -38,9 +43,8 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         
-        {/* Multiple Clones of the Same Model */}
+        {/* Render the Model */}
         <Computer position={[0, 0, 0]} rotation={[0, 0, 0]} />
-    
 
         <Preload all />
       </Suspense>

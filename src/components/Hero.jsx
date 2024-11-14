@@ -1,22 +1,37 @@
-import React from 'react';
-import {styles} from '../styles';
-import {motion} from 'framer-motion';
-import {ComputersCanvas, EarthCanvas} from './canvas'
+import { React ,useState, useEffect} from 'react';
+import { styles } from '../styles';
+import { motion } from 'framer-motion';
+import { ComputersCanvas, EarthCanvas } from './canvas';
 import { image } from '../assets';
 
-
-
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of `isMobile`
+    setIsMobile(mediaQuery.matches);
+
+    // Update `isMobile` when the media query status changes
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
   return (
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row justify-between`}>
-        <div className={`flex flex-row items-start gap-5`}>
+        <div className="flex flex-row items-start gap-5">
 
           <div className="flex flex-col justify-center items-center mt-5">
-
-            <div className="w-5 h-5 rounded-full bg-[#915eff]"/>
-            <div className="w-1 sm:h-80 h-40 violet-gradient"/>
-
+            <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+            <div className="w-1 sm:h-80 h-40 violet-gradient" />
           </div>
           
           <div>
@@ -27,25 +42,20 @@ const Hero = () => {
               I am a full stack developer <br className='sm:block hidden' />
               passionate about Artificial Intelligence
             </p>
-
-            
-
-
           </div>
           
         </div>
-    
 
         <img
-        src={image}
-        alt="project_image"
-        className="w-[200px] h-[200px] object-contain rounded-full border-4"
+          src={image}
+          alt="project_image"
+          className={`${isMobile? 'w-[80px] h-[80px]' : 'w-[200px] h-[200px]'} object-contain rounded-full`}
         />
       </div>
 
-    <EarthCanvas/>
-    
-    <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-left items-center'>
+      <EarthCanvas />
+
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-left items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -62,10 +72,8 @@ const Hero = () => {
           </div>
         </a>
       </div>
-      
-
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

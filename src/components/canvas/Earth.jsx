@@ -11,8 +11,8 @@ const Earth = ({ isMobile }) => {
     <mesh>
       <primitive
         object={earth.scene}
-        scale={isMobile ? 0.7 : 2} // Adjusted scale for mobile view
-        position-y={isMobile ? -0.5 : -1} // Adjusted position for mobile view
+        scale={isMobile ? 0.3 : 2} // Adjusted scale for mobile view
+        position-y={isMobile ? -0.2 : -1} // Adjusted position for mobile view
         rotation-y={0}
       />
     </mesh>
