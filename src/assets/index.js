@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 // import init from "./init.svg";
 import image from "./image.jpeg";
+import tech_image from "./tech_image.jpg"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -62,4 +63,5 @@ export {
   jobit,
   tripguide,
   image,
+  tech_image,
 };
