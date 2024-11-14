@@ -12,12 +12,13 @@ import { SectionWrapper } from '../hoc';
 const About = () => {
   return (
     <>
-    <motion.div>
+    <motion.div variants={textVariant()}>
+    <p className={styles.sectionSubText}>Introduction</p>
     <h2 className={styles.sectionHeadText} >Overview.</h2>
     </motion.div>
 
     <motion.p variants = {fadeIn("","",0.1,1)}
-    className = "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+    className = "mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]">
 
 Certainly! Here’s a brief sample of 150 words:
 
@@ -28,4 +29,9 @@ The world of technology is evolving rapidly, shaping how we live, work, and comm
   )
 }
 
-export default About
+export default SectionWrapper(About, "about");
+
+
+
+
+
