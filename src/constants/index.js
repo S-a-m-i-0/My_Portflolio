@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    java,
+    tensorflow,
   } from "../assets";
   
   export const navLinks = [
@@ -35,9 +37,14 @@ import {
       title: "Work",
     },
     {
+      id: "project",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
+    
   ];
   
   const services = [
@@ -81,8 +88,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Java",
+      icon: java,
     },
     {
       name: "Tailwind CSS",
@@ -109,8 +116,8 @@ import {
     //   icon: figma,
     // },
     {
-      name: "docker",
-      icon: docker,
+      name: "tensorflow",
+      icon: tensorflow,
     },
   ];
   

@@ -9,6 +9,8 @@ import close from "./close.svg";
 // import init from "./init.svg";
 import image from "./image.jpeg";
 import tech_image from "./tech_image.jpg"
+import java from "./tech/java_logo.png"
+import tensorflow from "./tech/tensorflow.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -64,4 +66,6 @@ export {
   tripguide,
   image,
   tech_image,
+  java,
+  tensorflow
 };
