@@ -27,7 +27,10 @@ import {
     tensorflow,
     C,
     Cpp,
-    asm
+    asm,
+    python,
+    mysql,
+    post
   } from "../assets";
   
   export const navLinks = [
@@ -136,6 +139,20 @@ import {
     {
       name: "Assembly",
       icon: asm,
+    },
+
+    {
+      name: "Python",
+      icon: python,
+    },
+
+    {
+      name: "MySQL",
+      icon: mysql,
+    },
+    {
+      name: "PostgreSQL",
+      icon: post,
     },
   ];
   

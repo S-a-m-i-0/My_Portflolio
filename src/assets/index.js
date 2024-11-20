@@ -14,6 +14,9 @@ import tensorflow from "./tech/tensorflow.png"
 import Cpp from "./tech/C++logo.png"
 import C from "./tech/C_logo.png"
 import asm from "./tech/asm.png"
+import python from "./tech/python.png"
+import mysql from "./tech/mysql.png"
+import post from "./tech/post.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -73,5 +76,8 @@ export {
   tensorflow,
   Cpp,
   C,
-  asm
+  asm,
+  python,
+  mysql,
+  post
 };
