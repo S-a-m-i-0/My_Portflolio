@@ -17,6 +17,10 @@ import asm from "./tech/asm.png"
 import python from "./tech/python.png"
 import mysql from "./tech/mysql.png"
 import post from "./tech/post.png"
+import firebase from "./tech/firebase.png"
+import android from "./tech/android.png"
+import express from "./tech/express.png"
+import sci from "./tech/scilit.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -79,5 +83,9 @@ export {
   asm,
   python,
   mysql,
-  post
+  post,
+  firebase,
+  android,
+  sci,
+  express
 };
