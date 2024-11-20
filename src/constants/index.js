@@ -25,6 +25,9 @@ import {
     threejs,
     java,
     tensorflow,
+    C,
+    Cpp,
+    asm
   } from "../assets";
   
   export const navLinks = [
@@ -118,6 +121,21 @@ import {
     {
       name: "tensorflow",
       icon: tensorflow,
+    },
+
+    {
+      name: "C++",
+      icon: Cpp,
+    },
+
+    {
+      name: "C",
+      icon: C,
+    },
+
+    {
+      name: "Assembly",
+      icon: asm,
     },
   ];
   
