@@ -1,3 +1,4 @@
+// Ball.jsx
 import React, { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -28,7 +29,7 @@ const Ball = (props) => {
       >
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#F6F7EB'
+          color="#F6F7EB"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -59,9 +60,9 @@ const Ball = (props) => {
 const BallCanvas = ({ icon, name }) => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
-      className='w-full h-full'
+      className="w-full h-full"
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
