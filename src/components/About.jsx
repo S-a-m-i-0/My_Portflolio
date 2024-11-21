@@ -17,17 +17,19 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'
+        className='mt-4 text-white text-[17px] max-w-6xl leading-[30px]'
       >
-        Certainly! Here’s a brief sample of 150 words:
-
-        The world of technology is evolving rapidly, shaping how we live, work, and communicate. In recent years, advancements in artificial intelligence and machine learning have opened up new possibilities for automation, personalization, and data analysis across industries. Smart devices and IoT (Internet of Things) technology continue to integrate seamlessly into our daily lives, allowing for greater connectivity and convenience. In the workplace, collaboration tools and cloud computing have made remote work more accessible, empowering teams to work together from anywhere in the world. Moreover, the rise of cybersecurity awareness has emphasized the need for robust protection measures, ensuring our digital lives remain safe. Looking ahead, we anticipate breakthroughs in quantum computing, which promise to redefine problem-solving capabilities on a massive scale. These innovations not only change how we interact with technology but also pave the way for a more connected, efficient, and secure future
+        I am a 3rd-year Computing Science student at the University of Alberta with a strong passion for Machine Learning and Artificial Intelligence. 
+        I have developed innovative projects in Python, Node.js, and machine learning, including text analysis and predictive modeling. My professional 
+        experience includes internships with organizations like Save the Children, where I contributed to impactful, mission-driven software development projects. 
+        I excel in collaborative environments and am eager to explore innovative solutions in AI and machine learning. Please feel free to contact me for 
+        opportunities or collaborations—I am excited to connect and create meaningful impact together.
       </motion.p>
 
       {/* Updated button below the paragraph */}
       <div className='flex justify-center mt-6'>
         <button
-          onClick={() => window.open('https://www.youtube.com', '_blank', 'noopener,noreferrer')}
+          onClick={() => window.open('https://sadmansami.tiiny.site/', '_blank', 'noopener,noreferrer')}
           className='bg-black text-white px-6 py-3 rounded-md hover:bg-gray-700'
           style={{
             borderWidth: '2px',
