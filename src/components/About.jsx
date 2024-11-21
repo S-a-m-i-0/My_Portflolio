@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant,slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import resume from "../assets/documents/resume.pdf"
+import { RoundedBox } from '@react-three/drei';
 
 const About = () => {
   return (
@@ -23,13 +25,17 @@ const About = () => {
         I have developed innovative projects in Python, Node.js, and machine learning, including text analysis and predictive modeling. My professional 
         experience includes internships with organizations like Save the Children, where I contributed to impactful, mission-driven software development projects. 
         I excel in collaborative environments and am eager to explore innovative solutions in AI and machine learning. Please feel free to contact me for 
-        opportunities or collaborations—I am excited to connect and create meaningful impact together.
+        opportunities or collaborations. I am excited to connect and create meaningful impact together.
       </motion.p>
 
-      {/* Updated button below the paragraph */}
+
+      <motion.div
+      variants={slideIn("up", "spring", 0.2, 1)}
+        
+      >
       <div className='flex justify-center mt-6'>
         <button
-          onClick={() => window.open('https://sadmansami.tiiny.site/', '_blank', 'noopener,noreferrer')}
+          onClick={() => window.open(resume, '_blank', 'noopener,noreferrer')}
           className='bg-black text-white px-6 py-3 rounded-md hover:bg-gray-700'
           style={{
             borderWidth: '2px',
@@ -38,9 +44,11 @@ const About = () => {
             borderImageSource: 'linear-gradient(to right, purple, pink, red)',
           }}
         >
-          Go to YouTube
+          View Resume
         </button>
+        
       </div>
+      </motion.div>
     </>
   );
 };
