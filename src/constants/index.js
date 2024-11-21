@@ -30,7 +30,11 @@ import {
     asm,
     python,
     mysql,
-    post
+    post,
+    android,
+    sci,
+    firebase,
+    express
   } from "../assets";
   
   export const navLinks = [
@@ -85,6 +89,21 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
+
+    {
+      name: "Firebase",
+      icon: firebase,
+    },
+    {
+      name: "C++",
+      icon: Cpp,
+    },
+
+    {
+      name: "C",
+      icon: C,
+    },
+
     {
       name: "TypeScript",
       icon: typescript,
@@ -97,6 +116,12 @@ import {
       name: "Java",
       icon: java,
     },
+
+    {
+      name: "tensorflow",
+      icon: tensorflow,
+    },
+
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -117,25 +142,8 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "tensorflow",
-      icon: tensorflow,
-    },
-
-    {
-      name: "C++",
-      icon: Cpp,
-    },
-
-    {
-      name: "C",
-      icon: C,
-    },
-
+    
+    
     {
       name: "Assembly",
       icon: asm,
@@ -153,6 +161,24 @@ import {
     {
       name: "PostgreSQL",
       icon: post,
+    },
+    {
+      name: "Android",
+      icon: android,
+    },
+    
+    {
+      name: "Scikit Learn",
+      icon: sci,
+    },
+    {
+      name: "Express",
+      icon: express,
+    },
+
+    {
+      name: "figma",
+      icon: figma,
     },
   ];
   
