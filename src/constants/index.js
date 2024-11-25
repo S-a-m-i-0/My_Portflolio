@@ -34,7 +34,9 @@ import {
     android,
     sci,
     firebase,
-    express
+    express,
+    nhl,
+    leo
   } from "../assets";
   
   export const navLinks = [
@@ -324,8 +326,101 @@ import {
           name: "css",
           color: "pink-text-gradient",
         },
+
+        
       ],
       image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Leo AI",
+      description:
+        "A Python, Node.js, and React.js web application with a machine learning foundation that uses deep learning (LSTM, BERT) and natural language processing (NLP) to categorise emotions in textual input with 94% accuracy",
+      tags: [
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+
+        {
+          name: "python",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "machine Learning",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: leo,
+      source_code_link: "https://github.com/",
+    },
+
+    {
+      name: "NHL Predictor",
+      description:
+        "A machine learning web app devoloped using react, flask and python for predicting NHL game winners using historical data from web scraping and advanced statistical models for accurate and data-driven predictions.",
+      tags: [
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "green-text-gradient",
+        },
+
+        {
+          name: "python",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "selenium",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "machine Learning",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: nhl,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "NHL Predictor",
+      description:
+        "A machine learning web app devoloped using react, flask and python for predicting NHL game winners using historical data from web scraping and advanced statistical models for accurate and data-driven predictions.",
+      tags: [
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "green-text-gradient",
+        },
+
+        {
+          name: "python",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "selenium",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "machine Learning",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: nhl,
       source_code_link: "https://github.com/",
     },
   ];

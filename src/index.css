@@ -80,6 +80,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.yellow-text-gradient {
+
+  background: linear-gradient(to right, #FFD700, #FFEA00, #FFFF66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */

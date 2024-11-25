@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-// import init from "./init.svg";
+
 import image from "./image.jpeg";
 import tech_image from "./tech_image.jpg"
 import java from "./tech/java_logo.png"
@@ -21,6 +21,9 @@ import firebase from "./tech/firebase.png"
 import android from "./tech/android.png"
 import express from "./tech/express.png"
 import sci from "./tech/scilit.png"
+
+import leo from "./leo.png"
+import nhl from "./NHL.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -87,5 +90,7 @@ export {
   firebase,
   android,
   sci,
-  express
+  express,
+  leo,
+  nhl
 };
