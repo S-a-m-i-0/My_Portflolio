@@ -9,7 +9,7 @@ import { styles } from '../styles';
 
 const Tech = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 12;
+  const itemsPerPage = 4;
   const totalPages = Math.ceil(technologies.length / itemsPerPage);
   const [loading, setLoading] = useState(false);
 
@@ -17,6 +17,7 @@ const Tech = () => {
   const currentItems = useMemo(() => {
     return technologies.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
   }, [currentPage, itemsPerPage]);
+
 
   // Handler for changing pages
   const handlePageChange = (newPage) => {
@@ -60,13 +61,13 @@ const Tech = () => {
         <p className={`${styles.sectionSubText} text-left`}>What Skills I Know</p>
         <h2 className={`${styles.sectionHeadText} text-left`}>Technical Skills.</h2>
       </motion.div>
-
+      {/* w-30 h-30 */}
       {loading ? (
         <Loader />
       ) : (
         <div className="grid grid-cols-6 justify-center gap-1 mt-8">
           {currentItems.map((technology) => (
-            <div key={technology.name} className="w-30 h-30">
+            <div key={technology.name} className="w-16 h-16">
               <BallCanvas icon={technology.icon} name={technology.name} />
             </div>
           ))}

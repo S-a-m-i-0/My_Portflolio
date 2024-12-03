@@ -44,7 +44,7 @@ const ProjectCard = ({
               />
             </div>
 
-            <div
+            {/* <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
@@ -53,7 +53,7 @@ const ProjectCard = ({
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -90,21 +90,7 @@ const Works = () => {
         variants={fadeIn("", "", 0, 1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]"
       >
-        The world of technology is evolving rapidly, shaping how we live, work,
-        and communicate. In recent years, advancements in artificial
-        intelligence and machine learning have opened up new possibilities for
-        automation, personalization, and data analysis across industries. Smart
-        devices and IoT (Internet of Things) technology continue to integrate
-        seamlessly into our daily lives, allowing for greater connectivity and
-        convenience. In the workplace, collaboration tools and cloud computing
-        have made remote work more accessible, empowering teams to work together
-        from anywhere in the world. Moreover, the rise of cybersecurity
-        awareness has emphasized the need for robust protection measures,
-        ensuring our digital lives remain safe. Looking ahead, we anticipate
-        breakthroughs in quantum computing, which promise to redefine
-        problem-solving capabilities on a massive scale. These innovations not
-        only change how we interact with technology but also pave the way for a
-        more connected, efficient, and secure future.
+        Through my projects, I gained expertise in machine learning by building models for emotion analysis and NHL winner prediction, learning to preprocess data, handle imbalances, and optimize algorithms. Developing a React.js frontend and Node.js backend taught me full-stack development and API integration. Building Android apps, like the Event Lottery System and book wishlist, enhanced my skills in Java programming, Firebase integration, and mobile UI/UX design. Web scraping and analyzing NHL data deepened my understanding of data engineering and statistical modeling. Additionally, working on Uncalibrated Visual Servoing taught me optimization techniques, while meal planner apps improved my user-centric design skills.
       </motion.p>
 
       <div className="w-full flex">

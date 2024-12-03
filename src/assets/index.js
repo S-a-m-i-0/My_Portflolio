@@ -24,6 +24,7 @@ import sci from "./tech/scilit.png"
 
 import leo from "./leo.png"
 import nhl from "./NHL.png"
+import event from "./event.jpg"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -43,6 +44,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import save from "./company/save.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -92,5 +94,7 @@ export {
   sci,
   express,
   leo,
-  nhl
+  nhl,
+  save,
+  event
 };

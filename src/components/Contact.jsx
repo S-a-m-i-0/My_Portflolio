@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { ComputersCanvas, EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import {Service, Template, public_key} from "./email"
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,16 +35,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        Service,
+        Template,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Sadman Sami",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "sadman.sami.arnob@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        public_key
       )
       .then(
         () => {

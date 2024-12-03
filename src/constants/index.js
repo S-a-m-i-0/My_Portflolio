@@ -36,7 +36,9 @@ import {
     firebase,
     express,
     nhl,
-    leo
+    leo,
+    save,
+    event
   } from "../assets";
   
   export const navLinks = [
@@ -186,57 +188,18 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Engineer Intern",
+      company_name: "Save the Children International",
+      icon: save,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2024 - August 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",   
+        "As a Software Engineer Intern at Save the Children International, I collaborated with a team to develop dynamic web applications using EJS templates, MongoDB, and Node.js, accelerating project delivery by 15%. ",
+        "Collaborated in designing secure RESTful APIs, managing over 1,000 monthly requests. Implemented user authentication with JWT and OAuth 2.0, enhancing security and reliability. ",
+        "Tested and debugged APIs with Postman, resolving 90% of functional issues pre-deployment, ensuring robust application performanc",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
@@ -267,71 +230,7 @@ import {
   ];
   
   const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-
-        
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    
     {
       name: "Leo AI",
       description:
@@ -360,7 +259,7 @@ import {
         },
       ],
       image: leo,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/S-a-m-i-0/Emotion_analysis",
     },
 
     {
@@ -391,37 +290,37 @@ import {
         },
       ],
       image: nhl,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/S-a-m-i-0/Hockey-match-predictor",
     },
     {
-      name: "NHL Predictor",
+      name: "Event Management App",
       description:
-        "A machine learning web app devoloped using react, flask and python for predicting NHL game winners using historical data from web scraping and advanced statistical models for accurate and data-driven predictions.",
+        "Developed an Event Management App in Java using Android Studio and Firebase, featuring lottery-based event signups, QR code scanning, real-time updates, image uploads, and a seamless multi-user interaction experience.",
       tags: [
         {
-          name: "react",
+          name: "Java",
           color: "pink-text-gradient",
         },
         {
-          name: "flask",
+          name: "XML",
           color: "green-text-gradient",
         },
 
         {
-          name: "python",
+          name: "Android Studio",
           color: "orange-text-gradient",
         },
         {
-          name: "selenium",
+          name: "Firebase",
           color: "yellow-text-gradient",
         },
         {
-          name: "machine Learning",
+          name: "UML",
           color: "blue-text-gradient",
         },
       ],
-      image: nhl,
-      source_code_link: "https://github.com/",
+      image: event,
+      source_code_link: "https://github.com/S-a-m-i-0/beacon-techies",
     },
   ];
   
