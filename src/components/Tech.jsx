@@ -9,15 +9,33 @@ import { styles } from '../styles';
 
 const Tech = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 4;
-  const totalPages = Math.ceil(technologies.length / itemsPerPage);
   const [loading, setLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 490px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+
+
+  // Set items per page based on whether it's mobile view or not
+  const itemsPerPage = isMobile? 5 : 12;
+  const totalPages = Math.ceil(technologies.length / itemsPerPage);
 
   // Get the technologies for the current page
   const currentItems = useMemo(() => {
     return technologies.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
   }, [currentPage, itemsPerPage]);
-
 
   // Handler for changing pages
   const handlePageChange = (newPage) => {
@@ -26,7 +44,7 @@ const Tech = () => {
       setCurrentPage(newPage);
       setTimeout(() => {
         setLoading(false);
-      }, 550); // Adjust the timeout as needed
+      }, 550);
     }
   };
 
@@ -61,16 +79,31 @@ const Tech = () => {
         <p className={`${styles.sectionSubText} text-left`}>What Skills I Know</p>
         <h2 className={`${styles.sectionHeadText} text-left`}>Technical Skills.</h2>
       </motion.div>
-      {/* w-30 h-30 */}
+
       {loading ? (
         <Loader />
       ) : (
-        <div className="grid grid-cols-6 justify-center gap-1 mt-8">
-          {currentItems.map((technology) => (
-            <div key={technology.name} className="w-16 h-16">
-              <BallCanvas icon={technology.icon} name={technology.name} />
-            </div>
-          ))}
+        <div
+          className={
+            isMobile
+              ? "grid grid-cols-3 justify-center gap-1 mt-8"
+              : "grid grid-cols-6 justify-center gap-1 mt-8"
+          }
+        >
+          {currentItems.map((technology, index) => {
+            // For mobile: If the item is on the second row (index 4 and 5),
+            // place them in the center by using col-start classes.
+            
+
+            return (
+              <div
+                key={technology.name}
+                className={isMobile? `flex justify-center items-center w-30 h-20`: `flex justify-center items-center gap-2 w-30 h-30 `}
+              >
+                <BallCanvas icon={technology.icon} name={technology.name} />
+              </div>
+            );
+          })}
         </div>
       )}
 
